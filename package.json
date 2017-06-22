@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "node ./bin/dev-server",
     "clear": "rm -rf build",
-    "build": "npm run clear && webpack --config config/webpack.config.js"
+    "build": "npm run clear && NODE_ENV=production webpack -p --config config/webpack.config.js"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -24,6 +24,7 @@
     "less": "^2.7.2",
     "less-loader": "^4.0.4",
     "optimize-css-assets-webpack-plugin": "^2.0.0",
+    "reset-css": "^2.2.0",
     "vue-loader": "^12.2.1",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.3.4",
