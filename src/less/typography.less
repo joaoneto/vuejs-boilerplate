@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
 html {
-  font-size: 14px;
+  font-size: @root-font-size;
   font-family: 'Open Sans', sans-serif;
 }
 
+body {
+  line-height: 1.2;
+}
+
 h1, h2, h3, h4, h5, h6 {
+  margin: @gutter 0;
   font-weight: 600;
 }
 
@@ -31,4 +36,13 @@ h5 {
 
 h6 {
   font-size: 1.2rem;
+}
+
+p {
+  margin-bottom: @gutter;
+}
+
+.highlight {
+  letter-spacing: 1px;
+  font-size: 1.4rem;
 }
