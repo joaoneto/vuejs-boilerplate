@@ -36,6 +36,18 @@
         <a href="#" class="text-secondary">Link secondary</a>
       </div>
       <div>
+        <span class="text-green">text-green</span>
+        <span class="text-orange">text-orange</span>
+        <span class="text-red">text-red</span>
+        <span class="text-blue">text-blue</span>
+      </div>
+      <div>
+        <span class="text-success">text-success</span>
+        <span class="text-warning">text-warning</span>
+        <span class="text-error">text-error</span>
+        <span class="text-info">text-info</span>
+      </div>
+      <div>
         <button type="submit">Button</button>
         <button type="submit" class="btn btn-primary">Button btn primary</button>
         <a href="#" class="btn btn-default">Button btn default</a>

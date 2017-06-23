@@ -124,3 +124,51 @@ a.text-secondary {
     color: darken(contrast(@secondary-fg, @secondary-bg), 12%);
   }
 }
+
+.text-success,
+.text-green,
+a.text-green  {
+  color: @green;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken(@green, 12%);
+  }
+}
+
+.text-info,
+.text-blue,
+a.text-blue  {
+  color: @blue;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken(@blue, 12%);
+  }
+}
+
+.text-error,
+.text-red,
+a.text-red  {
+  color: @red;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken(@red, 12%);
+  }
+}
+
+.text-warning,
+.text-orange,
+a.text-orange {
+  color: @orange;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken(@orange, 12%);
+  }
+}
