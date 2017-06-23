@@ -58,6 +58,36 @@
         <a href="#" class="btn btn-blue">Button btn blue</a>
         <a href="#" class="btn btn-orange">Button btn orange</a>
       </div>
+      <div>
+        <h2>Grid container</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              1. auto size col
+            </div>
+            <div class="col">
+              2. auto size col
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="col-6">
+              2. auto size col
+            </div>
+            <div class="col">
+              3. auto size col
+            </div>
+            <div class="col">
+              4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="col col-grow">
+              5. auto size col
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
       <p>Layout - Default (footer)</p>

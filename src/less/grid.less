@@ -1,0 +1,35 @@
+.container,
+.container-fluid,
+.col,
+.row {
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.col,
+[class*="col-"] {
+  flex-shrink: 1;
+  flex-direction: column;
+  margin: 0 @gutter / 2;
+  background-color: green;
+}
+
+.col-6 {
+  width: 50% - @gutter;
+  max-width: 50% - @gutter;
+}
+
+.col-grow {
+  flex-grow: 1;
+}
+
+.row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 @gutter * -1;
+}
