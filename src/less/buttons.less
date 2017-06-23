@@ -7,7 +7,10 @@ input[type="reset"] {
 }
 
 .btn,
-button {
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
   display: inline-block;
   align-items: flex-start;
   text-align: center;
@@ -24,6 +27,7 @@ button {
   &:active,
   &:focus,
   &:hover {
+    text-decoration: none;
     color: darken(@default-fg, 12%);
   }
 }
