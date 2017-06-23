@@ -35,6 +35,13 @@
         <a href="#" class="text-primary">Link primary</a>
         <a href="#" class="text-secondary">Link secondary</a>
       </div>
+      <div>
+        <button type="submit">Button</button>
+        <button type="submit" class="btn btn-primary">Button btn primary</button>
+        <a href="#" class="btn btn-default">Button btn default</a>
+        <a href="#" class="btn btn-primary">Button btn primary</a>
+        <a href="#" class="btn btn-secondary">Button btn secondary</a>
+      </div>
     </section>
     <footer>
       <p>Layout - Default (footer)</p>

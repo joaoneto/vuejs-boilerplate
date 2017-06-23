@@ -64,6 +64,15 @@ p {
   text-align: right;
 }
 
+//
+// Box sizing
+//
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 //
 // Colors
@@ -73,8 +82,10 @@ html {
 }
 
 .text-default,
-a.text-default {
+a.text-default,
+a {
   color: @default-fg;
+
   &:active,
   &:focus,
   &:hover {
@@ -85,6 +96,7 @@ a.text-default {
 .text-primary,
 a.text-primary {
   color: contrast(@primary-fg, @primary-bg);
+
   &:active,
   &:focus,
   &:hover {
@@ -95,6 +107,7 @@ a.text-primary {
 .text-secondary,
 a.text-secondary {
   color: contrast(@secondary-fg, @secondary-bg);
+
   &:active,
   &:focus,
   &:hover {

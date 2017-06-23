@@ -1,0 +1,71 @@
+.btn,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  font: 1rem 'Open Sans', sans-serif;
+}
+
+.btn,
+button {
+  display: inline-block;
+  align-items: flex-start;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: @default-fg;
+  background-color: @default-bg;
+  text-decoration: none;
+  padding: @gutter;
+  margin: 0;
+  cursor: pointer;
+  color: @default-fg;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken(@default-fg, 12%);
+  }
+}
+
+.btn-default,
+button.btn-default {
+  color: @default-fg;
+  background-color: @default-bg;
+  border-color: darken(@default-bg-dark, 10%);
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: lighten(@default-fg, 12%);
+    background-color: darken(@default-bg, 12%);
+  }
+}
+
+.btn-primary,
+button.btn-primary {
+  color: @primary-fg;
+  background-color: @primary-bg;
+  border-color: darken(@primary-bg, 10%);
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken(@primary-fg, 12%);
+    background-color: darken(@primary-bg, 12%);
+  }
+}
+
+.btn-secondary,
+button.btn-secondary {
+  color: @secondary-fg;
+  background-color: @secondary-bg;
+  border-color: darken(@secondary-bg, 10%);
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken(@secondary-fg, 12%);
+    background-color: darken(@secondary-bg, 12%);
+  }
+}
