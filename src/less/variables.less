@@ -1,16 +1,39 @@
+//
 // sizes
+//
 @root-font-size: 14px;
 @gutter: 1rem;
 
+//
+// color themes
+//
+
+// common colors
+@success: #00B300;
+@warning: #DF6500;
+@error: #DF0000;
+@info: #002D95;
+
 // default color theme
-@primary: #5B83AD;
-@primary-light: lighten(@primary, 10%);
-@primary-dark: darken(@primary, 10%);
+@default-bg: #FFFFFF;
+@default-bg-dark: #666666;
+@default-bg-light: #FFFFFF;
+@default-fg: contrast(@default-bg);
+@default-fg-light: contrast(@default-bg-light, @default-bg-dark, @default-bg-light);
+@default-fg-dark: contrast(@default-bg-dark, @default-bg-dark, @default-bg-light);
 
-@secondary: #835FB3;
-@secondary-light: lighten(@secondary, 10%);
-@secondary-dark: darken(@secondary, 10%);
+// primary color theme
+@primary-bg: #5B83AD;
+@primary-bg-light: lighten(@primary-bg, 26%);
+@primary-bg-dark: darken(@primary-bg, 26%);
+@primary-fg: contrast(@primary-bg);
+@primary-fg-light: contrast(@primary-bg-light, @primary-bg-dark, @primary-bg-light);
+@primary-fg-dark: contrast(@primary-bg-dark, @primary-bg-dark, @primary-bg-light);
 
-@default: #FFFFFF;
-@default-light: lighten(@default, 10%);
-@default-dark: darken(@default, 10%);
+// secondary color theme
+@secondary-bg: #835FB3;
+@secondary-bg-light: lighten(@secondary-bg, 26%);
+@secondary-bg-dark: darken(@secondary-bg, 26%);
+@secondary-fg: contrast(@secondary-bg);
+@secondary-fg-light: contrast(@secondary-bg-light, @secondary-bg-dark, @secondary-bg-light);
+@secondary-fg-dark: contrast(@secondary-bg-dark, @secondary-bg-dark, @secondary-bg-light);
