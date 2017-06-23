@@ -28,7 +28,6 @@ input[type="reset"] {
   &:focus,
   &:hover {
     text-decoration: none;
-    color: darken(@default-fg, 12%);
   }
 }
 
@@ -36,12 +35,12 @@ input[type="reset"] {
 button.btn-default {
   color: @default-fg;
   background-color: @default-bg;
-  border-color: darken(@default-bg-dark, 10%);
+  border-color: darken(@default-bg-dark, 12%);
 
   &:active,
   &:focus,
   &:hover {
-    color: lighten(@default-fg, 12%);
+    color: @default-fg;
     background-color: darken(@default-bg, 12%);
   }
 }
@@ -50,12 +49,12 @@ button.btn-default {
 button.btn-primary {
   color: @primary-fg;
   background-color: @primary-bg;
-  border-color: darken(@primary-bg, 10%);
+  border-color: darken(@primary-bg, 12%);
 
   &:active,
   &:focus,
   &:hover {
-    color: darken(@primary-fg, 12%);
+    color: @primary-fg;
     background-color: darken(@primary-bg, 12%);
   }
 }
@@ -64,12 +63,68 @@ button.btn-primary {
 button.btn-secondary {
   color: @secondary-fg;
   background-color: @secondary-bg;
-  border-color: darken(@secondary-bg, 10%);
+  border-color: darken(@secondary-bg, 12%);
 
   &:active,
   &:focus,
   &:hover {
-    color: darken(@secondary-fg, 12%);
+    color: @secondary-fg;
     background-color: darken(@secondary-bg, 12%);
+  }
+}
+
+.btn-red,
+button.btn-red {
+  color: white;
+  background-color: @red;
+  border-color: darken(@red, 12%);
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: white;
+    background-color: darken(@red, 12%);
+  }
+}
+
+.btn-green,
+button.btn-green {
+  color: white;
+  background-color: @green;
+  border-color: darken(@green, 12%);
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: white;
+    background-color: darken(@green, 12%);
+  }
+}
+
+.btn-blue,
+button.btn-blue {
+  color: white;
+  background-color: @blue;
+  border-color: darken(@blue, 12%);
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: white;
+    background-color: darken(@blue, 12%);
+  }
+}
+
+.btn-orange,
+button.btn-orange {
+  color: white;
+  background-color: @orange;
+  border-color: darken(@orange, 12%);
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: white;
+    background-color: darken(@orange, 12%);
   }
 }

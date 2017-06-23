@@ -41,6 +41,10 @@
         <a href="#" class="btn btn-default">Button btn default</a>
         <a href="#" class="btn btn-primary">Button btn primary</a>
         <a href="#" class="btn btn-secondary">Button btn secondary</a>
+        <a href="#" class="btn btn-red">Button btn red</a>
+        <a href="#" class="btn btn-green">Button btn green</a>
+        <a href="#" class="btn btn-blue">Button btn blue</a>
+        <a href="#" class="btn btn-orange">Button btn orange</a>
       </div>
     </section>
     <footer>
