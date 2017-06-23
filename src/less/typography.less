@@ -63,3 +63,42 @@ p {
 .align-right {
   text-align: right;
 }
+
+
+//
+// Colors
+//
+html {
+  color: @default-fg;
+}
+
+.text-default,
+a.text-default,
+a {
+  color: @default-fg;
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken(@default-fg, 12%);
+  }
+}
+
+.text-primary,
+a.text-primary {
+  color: contrast(@primary-fg, @primary-bg);
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken(contrast(@primary-fg, @primary-bg), 12%);
+  }
+}
+
+.text-secondary,
+a.text-secondary {
+  color: contrast(@secondary-fg, @secondary-bg);
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken(contrast(@secondary-fg, @secondary-bg), 12%);
+  }
+}

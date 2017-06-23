@@ -29,6 +29,11 @@
       <p class="info">Info</p>
       <p class="warning">Warning</p>
       <p class="error">Error</p>
+      <div>
+        <a href="#">Link default</a>
+        <a href="#" class="text-primary">Link primary</a>
+        <a href="#" class="text-secondary">Link secondary</a>
+      </div>
     </section>
     <footer>
       <p>Layout - Default (footer)</p>
