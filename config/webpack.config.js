@@ -16,10 +16,9 @@ const entry = [
   './src/index.js',
   './src/less/main.less'
 ];
-
+console.log(path.resolve('./src'))
 const plugins = [
   extractCommonStyles,
-  new ExtractTextPlugin({ filename: '[name].[contenthash].css', allChunks: true }),
   new webpack.optimize.UglifyJsPlugin({
     compress: {
       warnings: false
@@ -76,7 +75,11 @@ module.exports = {
       vue: 'vue/dist/vue.js',
       'vue$': 'vue/dist/vue.js',
       '@': path.resolve('./src'),
-    }
+    },
+    modules: [
+      path.resolve('./src'),
+      'node_modules',
+    ],
   },
   module: {
     rules: [
@@ -88,13 +91,15 @@ module.exports = {
             {
               loader: 'css-loader',
               options: {
-                sourceMap: true
+                sourceMap: true,
+                extract: isProd,
               }
             },
             {
               loader: 'less-loader',
               options: {
-                sourceMap: true
+                sourceMap: true,
+                extract: isProd,
               }
             }
           ],
@@ -107,30 +112,33 @@ module.exports = {
         loader: 'vue-loader',
         options: {
           loaders: {
-            css: ExtractTextPlugin.extract({
+            css: extractCommonStyles.extract({
               use: [
                 {
                   loader: 'css-loader',
                   options: {
-                    sourceMap: true
+                    sourceMap: true,
+                    extract: isProd,
                   }
                 }
               ],
               publicPath: '.',
               fallback: ' vue-style-loader'
             }),
-            less: ExtractTextPlugin.extract({
+            less: extractCommonStyles.extract({
               use: [
                 {
                   loader: 'css-loader',
                   options: {
-                    sourceMap: true
+                    sourceMap: true,
+                    extract: isProd,
                   }
                 },
                 {
                   loader: 'less-loader',
                   options: {
-                    sourceMap: true
+                    sourceMap: true,
+                    extract: isProd,
                   }
                 }
               ],
