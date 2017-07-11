@@ -3,14 +3,6 @@ button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  font: 1rem 'Open Sans', sans-serif;
-}
-
-.btn,
-button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
   display: inline-block;
   align-items: flex-start;
   text-align: center;
@@ -21,6 +13,7 @@ input[type="reset"] {
   text-decoration: none;
   padding: @gutter;
   margin: 0;
+  font: 1rem 'Open Sans', sans-serif;
   cursor: pointer;
   color: @default-fg;
 
@@ -31,50 +24,7 @@ input[type="reset"] {
   }
 }
 
-.btn-default,
-button.btn-default {
-  color: @default-fg;
-  background-color: @default-bg;
-  border-color: darken(@default-bg-dark, 12%);
-
-  &:active,
-  &:focus,
-  &:hover {
-    color: @default-fg;
-    background-color: darken(@default-bg, 12%);
-  }
-}
-
-.btn-primary,
-button.btn-primary {
-  color: @primary-fg;
-  background-color: @primary-bg;
-  border-color: darken(@primary-bg, 12%);
-
-  &:active,
-  &:focus,
-  &:hover {
-    color: @primary-fg;
-    background-color: darken(@primary-bg, 12%);
-  }
-}
-
-.btn-secondary,
-button.btn-secondary {
-  color: @secondary-fg;
-  background-color: @secondary-bg;
-  border-color: darken(@secondary-bg, 12%);
-
-  &:active,
-  &:focus,
-  &:hover {
-    color: @secondary-fg;
-    background-color: darken(@secondary-bg, 12%);
-  }
-}
-
-.btn-red,
-button.btn-red {
+.btn-red {
   color: white;
   background-color: @red;
   border-color: darken(@red, 12%);
@@ -87,8 +37,7 @@ button.btn-red {
   }
 }
 
-.btn-green,
-button.btn-green {
+.btn-green {
   color: white;
   background-color: @green;
   border-color: darken(@green, 12%);
@@ -101,8 +50,7 @@ button.btn-green {
   }
 }
 
-.btn-blue,
-button.btn-blue {
+.btn-blue {
   color: white;
   background-color: @blue;
   border-color: darken(@blue, 12%);
@@ -115,8 +63,7 @@ button.btn-blue {
   }
 }
 
-.btn-orange,
-button.btn-orange {
+.btn-orange {
   color: white;
   background-color: @orange;
   border-color: darken(@orange, 12%);
@@ -128,3 +75,5 @@ button.btn-orange {
     background-color: darken(@orange, 12%);
   }
 }
+
+.theme-buttons(@themes);
