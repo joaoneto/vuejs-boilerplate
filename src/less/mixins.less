@@ -1,0 +1,19 @@
+.theme-buttons(@themes; @i: length(@themes)) when (@i > 0) {
+  .theme-buttons(@themes; @i - 1);
+  @theme-name: extract(@themes, @i);
+  @theme-variable-bg: '@{theme-name}-bg';
+  @theme-variable-fg: '@{theme-name}-fg';
+
+  .btn-@{theme-name} {
+    color: @@theme-variable-fg;
+    background-color: @@theme-variable-bg;
+    border-color: darken(@@theme-variable-bg, 12%);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: @@theme-variable-fg;
+      background-color: darken(@@theme-variable-bg, 12%);
+    }
+  }
+}
