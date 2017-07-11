@@ -16,7 +16,7 @@ const entry = [
   './src/index.js',
   './src/less/main.less'
 ];
-console.log(path.resolve('./src'))
+
 const plugins = [
   extractCommonStyles,
   new webpack.optimize.UglifyJsPlugin({
