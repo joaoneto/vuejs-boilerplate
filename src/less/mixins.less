@@ -17,3 +17,21 @@
     }
   }
 }
+
+.theme-text(@themes; @i: length(@themes)) when (@i > 0) {
+  .theme-text(@themes; @i - 1);
+  @theme-name: extract(@themes, @i);
+  @theme-variable-bg: '@{theme-name}-bg';
+  @theme-variable-fg: '@{theme-name}-fg';
+
+  .text-@{theme-name} {
+    color: contrast(@@theme-variable-fg, @@theme-variable-bg);
+  }
+  a.text-@{theme-name} {
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken(contrast(@@theme-variable-fg, @@theme-variable-bg), 12%);
+    }
+  }
+}

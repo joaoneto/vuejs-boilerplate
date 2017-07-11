@@ -47,7 +47,7 @@ p {
   margin-bottom: @gutter;
 }
 
-.highlight {
+.matter {
   letter-spacing: 1px;
   font-size: 1.4rem;
 }
@@ -92,10 +92,11 @@ html {
 }
 
 .text-default,
-a.text-default,
 a {
   color: @default-fg;
-
+}
+a.text-default,
+a {
   &:active,
   &:focus,
   &:hover {
@@ -103,33 +104,12 @@ a {
   }
 }
 
-.text-primary,
-a.text-primary {
-  color: contrast(@primary-fg, @primary-bg);
-
-  &:active,
-  &:focus,
-  &:hover {
-    color: darken(contrast(@primary-fg, @primary-bg), 12%);
-  }
-}
-
-.text-secondary,
-a.text-secondary {
-  color: contrast(@secondary-fg, @secondary-bg);
-
-  &:active,
-  &:focus,
-  &:hover {
-    color: darken(contrast(@secondary-fg, @secondary-bg), 12%);
-  }
-}
-
 .text-success,
-.text-green,
-a.text-green  {
+.text-green {
   color: @green;
-
+}
+a.text-success,
+a.text-green {
   &:active,
   &:focus,
   &:hover {
@@ -138,10 +118,11 @@ a.text-green  {
 }
 
 .text-info,
-.text-blue,
-a.text-blue  {
+.text-blue {
   color: @blue;
-
+}
+a.text-info,
+a.text-blue {
   &:active,
   &:focus,
   &:hover {
@@ -150,10 +131,11 @@ a.text-blue  {
 }
 
 .text-error,
-.text-red,
-a.text-red  {
+.text-red {
   color: @red;
-
+}
+a.text-error,
+a.text-red {
   &:active,
   &:focus,
   &:hover {
@@ -162,13 +144,16 @@ a.text-red  {
 }
 
 .text-warning,
-.text-orange,
-a.text-orange {
+.text-orange {
   color: @orange;
-
+}
+a.text-warning,
+a.text-orange {
   &:active,
   &:focus,
   &:hover {
     color: darken(@orange, 12%);
   }
 }
+
+.theme-text(@themes);
