@@ -131,30 +131,6 @@
 <style scoped lang="less">
   @import '../less/variables';
 
-  .margin {
-    margin: 0 @gutter;
-  }
-
-  .padding {
-    padding: @gutter;
-  }
-
-  .success {
-    color: @success;
-  }
-
-  .warning {
-    color: @warning;
-  }
-
-  .error {
-    color: @error;
-  }
-
-  .info {
-    color: @info;
-  }
-
   // theme color test
   .theme-default {
     background-color: @default-bg;
